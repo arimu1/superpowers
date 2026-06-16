@@ -17,6 +17,7 @@ Assume they are a skilled developer, but know almost nothing about our toolset o
 
 **Save plans to:** `docs/superpowers/plans/YYYY-MM-DD-<feature-name>.md`
 - (User preferences for plan location override this default)
+- If `docs/` is a documentation-build source root (Sphinx, MkDocs, Docusaurus, and Read the Docs auto-publish every `.md` they find under it), exclude `docs/superpowers/` from the build — e.g. Sphinx `exclude_patterns`, MkDocs `exclude_docs` — so internal plans aren't published.
 
 ## Scope Check
 

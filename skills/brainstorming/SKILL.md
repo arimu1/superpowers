@@ -27,6 +27,7 @@ You MUST create a task for each of these items and complete them in order:
 4. **Propose 2-3 approaches** — with trade-offs and your recommendation
 5. **Present design** — in sections scaled to their complexity, get user approval after each section
 6. **Write design doc** — save to `docs/superpowers/specs/YYYY-MM-DD-<topic>-design.md` and commit
+   - If `docs/` is a documentation-build source root (Sphinx, MkDocs, Docusaurus, and Read the Docs auto-publish every `.md` they find under it), exclude `docs/superpowers/` from the build — e.g. Sphinx `exclude_patterns`, MkDocs `exclude_docs` — so internal specs aren't published.
 7. **Spec self-review** — quick inline check for placeholders, contradictions, ambiguity, scope (see below)
 8. **User reviews written spec** — ask user to review the spec file before proceeding
 9. **Transition to implementation** — invoke writing-plans skill to create implementation plan
